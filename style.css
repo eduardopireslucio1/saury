@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #090f1b 0%, #212d40 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #e5eaff;
+}
+main {
+  max-width: 400px;
+  margin: 60px auto 0 auto;
+  background: rgba(24, 34, 56, 0.95);
+  border-radius: 25px;
+  box-shadow: 0 4px 24px #0057b8a9;
+  padding: 32px 24px 24px 24px;
+  position: relative;
+  z-index: 2;
+}
+h1 {
+  text-align: center;
+  color: #42a5f5;
+  font-weight: 900;
+  text-shadow: 0 2px 8px #001a33;
+}
+.botao-azul {
+  display: block;
+  margin: 0 auto 1.3em auto;
+  padding: 12px 26px;
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #001a33;
+  transition: background .2s;
+}
+.botao-azul:hover {
+  background: #1976d2;
+}
+.container-botao {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  z-index: 10;
+}
+.contador {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  color: #6ec6ff;
+  background: rgba(13, 37, 64, 0.72);
+  border-radius: 14px;
+  padding: 14px 5px 8px 5px;
+  box-shadow: 0 2px 12px #0057b854;
+}
+.contador span#tempo {
+  font-size: 1.25em;
+  font-weight: bold;
+  display: block;
+  color: #42a5f5;
+  margin-bottom: 6px;
+}
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0057b850;
+  margin-bottom: 1.5em;
+}
+.fotos {
+  display: flex;
+  width: calc(300px * 7);
+  animation: slideFotos 21s linear infinite;
+}
+.fotos img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-right: 6px;
+  box-shadow: 0 2px 8px #001a33;
+}
+@keyframes slideFotos {
+  0% { transform: translateX(0); }
+  90% { transform: translateX(-1800px); }
+  100% { transform: translateX(0); }
+}
+.mensagem {
+  background: #102040;
+  border-radius: 14px;
+  padding: 18px 14px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #6ec6ff;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px #0057b833;
+}
+.musica {
+  margin: 0 auto;
+  text-align: center;
+}
+.coracoes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+.coracao {
+  filter: drop-shadow(0 2px 6px #42a5f5bb);
+  text-shadow: 0 1px 10px #001a33;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
